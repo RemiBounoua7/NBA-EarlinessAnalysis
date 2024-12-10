@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When isn't it 'too early' anymore ?</title>
+    <link rel="stylesheet" href="styles copy.css">
+</head>
+<body>
+    <header>
+        <h1>When isn't it 'too early' anymore ?</h1>
+    </header>
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+            The NBA regular season is ver very long. 82 games between October to April sometimes feel like an eternity.
+            As a basketball enjoyer, how are you supposed to know how much trust you can put to this or that part of the season ?
+            How many times did you ask yourselves if the good form your team displayed would last ? 
+            If it was too late in the season to hope for a late playoff push ? <br><b>When is it not 'too early to tell' anymore ?</b> 
+            And consequentially, <b>when is it really to late to hope ?</b>
+            <br>
+            <br>
+            We'll look at  <a href="https://remibounoua7.github.io/NBA-Championship-Corner/">1997-2024 NBA seasons' contenders</a> to see when the full picture emerged.
+            If you aren't familiar with the 'contender zone' concept, developped in the aforementioned page, I suggest you take a look and come back here after.
+        </p>
+        <p>
+            The methodology was the following :<br>
+            - Take the 1997 to 2024 seasons <br>
+            - Identify the final contenders : who were the teams that found themselves in the contender zone by the end of each season<br>
+            - For every 2 weeks in the season, identify which team were in the zone at that time.<br>
+            - Find the false positives and false negatives (more on that later)<br>
+            - Average it out for the 27 years selected to get an idea of the general trends <br>
+            <br><i>Every dataset and python scripts are included in the github repository.</i>
+
+
+        </p>
+
+    </section>
+    
+    <section id="False Positives & Negatives">
+        <h2>False Positives & False Negatives</h2>
+        <p>
+            <u>False Positives</u> are teams that find themselves in the contender zone during the season, that don't last until the end.<br><br>
+            They can have a good start, or a bad ending. They can have unfortunate injuries, bad luck or a simple dip in performances.
+            What matters is that they don't last in the golden zone.
+            <br><br>
+            What we want to extract from the average false positive number per week is to know whether we can trust a team's good early season performances.
+            Are they a serious contender ? How long until we can safely assume such label ? Are they subject to a fall ? <br><br>
+            How many teams are in that position every year ? At what point in the season is it still a possibility ?
+        </p>
+
+        <p><br>
+            <u>False Negatives</u> are teams that we know are contenders by the end of the season, that aren't there yet by the time we measure it.<br><br>
+            For example, if a team reached contender status by Christmas (week 8), and stay there until the end of the season, they will be categorized as false negatives from week 2 to 6.
+            Such teams can have a bad start, or find their true form during the season. They can have players coming back from injury, better shooting splits, a new coach, or make the one trade at the deadline that changes everything.
+            What matters is that they weren't in the golden zone at some point but got there eventually.
+            <br><br>
+            What we want to get from the average false negative number per week is to know how much team we can suspect find their cruising speed late into the season.
+            Who's a probable sleeper ? Who's the one team that's gonna come in from the play-in and upset the better seeds ? Is it too late for your team to be a real contender ?
+            Can they salvage their season by firing their coach ?<br><br>
+            How many teams are in that position every year ? At what point in the season is it still a possibility ?
+        </p>        
+    </section>
+    <section id="Graph">
+        <h2>Results</h2>
+        <div class="text-image-container">
+            <img src="FalsePos&Neg.png">
+            <p style="padding-left: 20px;">
+                Here is the final graph, showing the average false positives and false negatives per week.
+
+                For added context : 
+                <br>- Start of the season : October (Week 0)
+                <br>- Christmas : Week 10
+                <br>- MLK Day : Week 14
+                <br>- Trade Deadline : Week 16
+                <br>- All Star Week-end : Week 18
+                <br>- End of the season : Week 24-25
+                
+            </p> 
+        </div>
+        <p><br>
+            SO, what can we conclude ?<br><br>First, we see more false positives than false negatives, meaning it's more likely for a team to become contender than for a team to fall out of the contender zone.
+            Furthermore, after only 4 weeks, we can assume the teams we find in the contender zone are for the most part staying there ! <br>
+            For the false negatives, this is much harder to analyze. There can be new contenders all the way to the end, we can assume at least 1 team gets in 3 weeks. 
+
+        </p>
+    </section>
+    <section id="2025">
+        <h2>What does it say about 2025 then ?</h2>
+        <div class="text-image-container" style="padding-top: 30px;">
+            <img style="width: 40%;"src="2025 screenshot with background.PNG">
+
+            <p style="padding-left: 20px;">
+            At the time of righting, we're just before Christmas. The picture looks like this : 7 contenders, with OKC Boston and Cleveland looking to be slight favorites and 4 western underdogs.
+            But everything can change rapidly. <br><br>
+
+            From what we saw, around Week 8-10 we can still expect 1 team to fall out, and 3 or 4 to enter the race.<br><br>
+            <b>Meaning we can only get 3 or 4 of NY, Minnesota, Milwaukee, Denver, LA, Indiana, Philadelphia or Orlando to make it. Who are your picks ?</b>
+            <br><b>And 1 actual contenders is likely to fall. Are the Rockets too good to be true ? Who has the toughest schedule left to play ? </b>
+            </p>
+        </div>
+        
+    </section>
+</body>
+</html>
+
+
